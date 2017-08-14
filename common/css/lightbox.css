@@ -1,0 +1,751 @@
+
+@charset "utf-8";
+
+/* 公用 CSS */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+.box_popup
+{
+	display:none;	/*記得寫隱藏，可不用寫z-index*/
+	position:absolute;
+	text-align:left;
+	padding:20px;
+	color:#333;
+	-webkit-box-shadow: 0 6px 6px -6px #000;
+	-moz-box-shadow: 0 6px 6px -6px #000;
+	box-shadow: 0 6px 6px -6px #000;
+	/*width:90%;*/
+	background:#FFF;
+	border-radius:10px;
+}
+
+.box_popup .closeBtn
+{
+	width:16px;
+	height:16px;
+	position:absolute;
+	right:8px;
+	top:8px;
+	cursor:pointer;
+	background:url(../../common/img/ui-icons_222222_256x240.png) -96px -128px no-repeat;
+}
+
+#lightbox
+{
+	/*底下lightbox灰底基本的五行CSS設定請務必寫好*/
+	z-index: 9999;
+	display: none;
+	background: #000;	/* color */
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+/* 一般內容 */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+.box_popup .listBox
+{
+	padding-bottom:20px;
+}
+
+.box_popup .listBox .box p ,
+.box_popup .listBox .box label
+{
+	font-size:15px;
+	line-height:40px;
+	font-weight:normal;
+	margin:0;
+}
+
+.box_popup .listBox .box .squareBox
+{
+	position: relative;
+	width: 150px;
+	margin: 20px auto;
+}
+
+.box_popup .listBox .box .squareBox label
+{
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	position: absolute;
+	top: 10px;
+	left: 60px;
+	background: -webkit-linear-gradient(top, #36C 0%, #47C 100%);
+	background: linear-gradient(to bottom, #36C 0%, #47C 100%);
+	border-radius: 4px;
+	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.4);
+}
+
+.box_popup .listBox .box .squareBox label:after
+{
+	content: '';
+	width: 9px;
+	height: 5px;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	border: 3px solid #FFF;
+	border-top: none;
+	border-right: none;
+	background: transparent;
+	opacity: 0;
+	-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+}
+
+.box_popup .listBox .box .squareBox label:hover::after
+{
+	opacity: 0.3;
+}
+
+.box_popup .listBox .box .squareBox input[type=checkbox]
+{
+	visibility: hidden;
+}
+
+.box_popup .listBox .box .squareBox input[type=checkbox]:checked + label:after
+{
+	opacity: 1;
+}
+
+.box_popup .listBox .box input[type=text] ,
+.box_popup .listBox .box select
+{
+	font-size:18px;
+	height:30px;
+	line-height:30px;
+	background:#FFF;
+	border:1px solid #999;
+	border-radius:5px;
+}
+
+.box_popup .buttons
+{
+	text-align:center;
+	margin-top:20px;
+	padding-top:10px;
+	border-top:1px solid #CCC;
+}
+
+.box_popup .buttons .btn_submit ,
+.box_popup .buttons .btn_cancel ,
+.box_popup .buttons .btn_close
+{
+	font-size:16px;
+	color:#FFF;
+	line-height:35px;
+	border-radius:5px;
+	padding:5px 20px;
+	margin:0 20px;
+	text-decoration:none;
+}
+
+.box_popup .buttons .btn_submit
+{
+	background:#e98027;
+}
+
+.box_popup .buttons .btn_cancel ,
+.box_popup .buttons .btn_close
+{
+	background:#333;
+}
+
+.box_popup .listBox .box.info .healthstatus
+{
+	font-size:18px;
+	vertical-align:middle;
+}
+
+.box_popup .listBox .box.info .healthstatus input[type=checkbox]
+{
+	width:20px;
+	height:20px;
+	vertical-align:middle;
+}
+
+/* 個別設定 */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+#box2.fixSize .listBox
+{
+	width:800px;
+	min-height:350px;
+}
+
+#box2.box_popup .listBox .selectList
+{
+	width: 96%;
+	margin: 10px auto;
+	line-height: 35px;
+}
+
+#box2.box_popup .listBox .selectList select
+{
+	font-size:13px;
+}
+
+#box2.box_popup .box .provider_list li ,
+#box4.box_popup .box .provider_list li
+{
+	color:#666;
+	height:35px;
+	line-height:35px;
+}
+
+#box2.box_popup .box .provider_list input[type=checkbox] ,
+#box4.box_popup .box .provider_list input[type=checkbox]
+{
+	width:30px;
+	height:30px;
+	margin:0;
+	float:left;
+	clear:left;
+	cursor:pointer;
+}
+
+#box2.box_popup .box .provider_list .plus ,
+#box2.box_popup .box .provider_list .decrease ,
+#box4.box_popup .box .provider_list .plus ,
+#box4.box_popup .box .provider_list .decrease
+{
+	display:block;
+	float:left;
+	width:25px;
+	height:25px;
+	font-size:20px;
+	line-height:25px;
+	text-align:center;
+	color:#FFF;
+	background:#F60;
+	vertical-align:middle;
+	margin-top:3px;
+	cursor:pointer;
+}
+
+#box2.box_popup .box .provider_list .quantity ,
+#box4.box_popup .box .provider_list .quantity
+{
+	display:block;
+	float:left;
+	border-radius:0;
+	border:1px solid #F60;
+	width:30px;
+	height:25px;
+	color:#F60;
+	text-align:center;
+	vertical-align:middle;
+	margin-top:3px;
+}
+
+#box2.box_popup .box .provider_list .foodTXT1 ,
+#box2.box_popup .box .provider_list .foodTXT2 ,
+#box2.box_popup .box .provider_list .foodTXT3
+{
+	display:block;
+	float:left;
+	line-height:35px;
+}
+
+#box2.box_popup .box .provider_list .foodTXT1
+{
+	width:200px;
+	margin-left:30px;
+}
+
+#box2.box_popup .box .provider_list .foodTXT2
+{
+	width:100px;
+}
+
+#box2.box_popup .box .provider_list .foodTXT3
+{
+	width:200px;
+}
+
+#box4.box_popup .box .provider_list .item ,
+#box4.box_popup .box .provider_list .stxt
+{
+	display:block;
+	float:left;
+	line-height:35px;
+	font-size:16px;
+	padding:0 5px;
+}
+
+#box2.box_popup .box .total
+{
+	font-size:15px;
+	text-align:center;
+}
+
+#box3.box_popup .provider_list
+{
+	margin-left:80px;
+	margin-top:-40px;
+}
+
+#box4.box_popup .provider_list
+{
+	margin-left:80px;
+	margin-top:-35px;
+}
+
+#box5.box_popup {width:600px;}
+
+#box6.box_popup textarea
+{
+	resize:none;
+	font-size:15px;
+}
+
+.box_popup.manager {width:80%;}
+
+/* 服務提供者 */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+.box_popup.provider .listBox
+{
+	height:450px;
+}
+
+#box2.box_popup .frame ,
+#box3.box_popup .frame ,
+#box4.box_popup .frame ,
+.box_popup.provider .frame
+{
+	min-width:800px;
+	min-height:350px;
+}
+
+.box_popup.provider .box
+{
+	//
+}
+
+#box2.box_popup .box .submenu ,
+.box_popup.provider .box .submenu
+{
+	width:96% !important;
+	margin:20px auto 0 auto !important;
+}
+
+#box2.box_popup .box .submenu tr ,
+.box_popup.provider .box .submenu tr
+{
+	border:0 !important;
+}
+
+#box2.box_popup .box .submenu td ,
+.box_popup.provider .box .submenu td
+{
+	line-height:30px;
+}
+
+#box2.box_popup .box .submenu .on ,
+.box_popup.provider .box .submenu .on
+{
+	width:100px;
+}
+
+#box2.box_popup .box .submenu .off ,
+.box_popup.provider .box .submenu .off
+{
+	width:100px;
+	border-bottom:1px solid #CCC;
+}
+
+#box2.box_popup .box .submenu .line ,
+.box_popup.provider .box .submenu .line
+{
+	border-bottom:1px solid #CCC;
+}
+
+#box2.box_popup .box .submenu .on a ,
+#box2.box_popup .box .submenu .off a ,
+.box_popup.provider .box .submenu .on a ,
+.box_popup.provider .box .submenu .off a
+{
+	display:block;
+	font-size:16px;
+	color:#666;
+	width:100px;
+	text-align:center;
+	border:1px solid #CCC;
+	border-top-right-radius:10px;
+	border-top-left-radius:10px;
+	border-bottom:0;
+	text-decoration:none;
+}
+
+#box2.box_popup .box .submenu .on a:hover ,
+#box2.box_popup .box .submenu .off a:hover ,
+.box_popup.provider .box .submenu .on a:hover ,
+.box_popup.provider .box .submenu .off a:hover
+{
+	color:#000;
+}
+
+#box2.box_popup .box .submenu .off a ,
+.box_popup.provider .box .submenu .off a
+{
+	background-color:#fafafa;
+}
+
+#box2.box_popup .box .provider_list ,
+.box_popup.provider .box .provider_list
+{
+	width:96%;
+	margin:10px auto;
+	line-height:35px;
+	color:#333;
+}
+
+#box2.box_popup .box .provider_list li ,
+.box_popup.provider .box .provider_list li
+{
+	border-bottom:1px dashed #CCC;
+}
+
+#box2.box_popup .box .provider_list input[type=radio] ,
+.box_popup.provider .box .provider_list input[type=radio]
+{
+	width:30px;
+	height:38px;
+	vertical-align:middle;
+	margin:0;
+	float:left;
+	clear:left;
+}
+
+#box2.box_popup .box .provider_list label ,
+.box_popup.provider .box .provider_list label
+{
+	display:block;
+	width:95%;
+}
+
+#box2.box_popup .box .provider_list tr ,
+.box_popup.provider .box .provider_list tr
+{
+	border-bottom:1px dashed #CCC;
+}
+
+#box2.box_popup .box .provider_list th ,
+#box2.box_popup .box .provider_list td ,
+.box_popup.provider .box .provider_list th ,
+.box_popup.provider .box .provider_list td
+{
+	font-size:15px;
+	white-space: nowrap;
+	text-align:center;
+	padding:5px;
+}
+
+#box2.box_popup .box .provider_list .name label ,
+.box_popup.provider .box .provider_list .name label
+{
+	text-align:left;
+}
+
+#box2.box_popup .box .provider_list .detail ,
+.box_popup.provider .box .provider_list .detail
+{
+	display:block;
+	width:370px;
+	overflow:hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+#box2.box_popup .box .provider_list .name ,
+.box_popup.provider .box .provider_list .name
+{
+	width:120px;
+	text-align:left;
+}
+
+#box2.box_popup .box .provider_list .name input ,
+.box_popup.provider .box .provider_list .name input
+{
+	float:none;
+}
+
+#box2.box_popup .box .provider_list .name label ,
+.box_popup.provider .box .provider_list .name label
+{
+	display:inline;
+}
+
+#box2.box_popup .box .provider_list .name ,
+#box2.box_popup .box .provider_list .area ,
+.box_popup.provider .box .provider_list .name ,
+.box_popup.provider .box .provider_list .area
+{
+	color:#e98027;
+}
+
+#box2.box_popup .box .provider_list .button a ,
+.box_popup.provider .box .provider_list .button a
+{
+	border:1px solid #e98027;
+	border-radius:5px;
+	color:#e98027;
+	font-size:13px;
+	line-height:25px;
+	text-decoration:none;
+	padding:5px;
+}
+
+#box2.box_popup .box .provider_list .info ,
+.box_popup.provider .box .provider_list .info
+{
+	height:500px;
+	text-align:left;
+}
+
+/* 服務提供者 素人詳細資料 */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+#box2.box_popup .personInfo ,
+.box_popup.provider .personInfo
+{
+	margin:10px;
+}
+
+#box2.box_popup .personInfo .info ,
+.box_popup.provider .personInfo .info
+{
+	float:left;
+	width:180px;
+}
+
+#box2.box_popup .personInfo .info .photo ,
+.box_popup.provider .personInfo .info .photo
+{
+	width:120px;
+	height:120px;
+	border-radius:50%;
+	margin-bottom:20px;
+}
+
+#box2.box_popup .personInfo .info .photo img ,
+.box_popup.provider .personInfo .info .photo img
+{
+	width:100%;
+	height:auto;
+}
+
+#box2.box_popup .personInfo .info p ,
+.box_popup.provider .personInfo .info p
+{
+	font-size:16px;
+	color:#666;
+	line-height:30px;
+}
+
+#box2.box_popup .personInfo .content ,
+.box_popup.provider .personInfo .content
+{
+	margin-left:180px;
+}
+
+#box2.box_popup .personInfo .submenu ,
+.box_popup.provider .personInfo .submenu
+{
+	width:100%;
+}
+
+#box2.box_popup .personInfo .submenu .on ,
+#box2.box_popup .personInfo .submenu .off ,
+.box_popup.provider .personInfo .submenu .on ,
+.box_popup.provider .personInfo .submenu .off
+{
+	width:140px;
+	border:1px solid #d6d6d6;
+	border-top:4px solid #d6d6d6;
+}
+
+#box2.box_popup .personInfo .submenu .on ,
+.box_popup.provider .personInfo .submenu .on
+{
+	border-top-color:#fc4f08;
+	border-bottom-color:#FFF;
+}
+
+#box2.box_popup .personInfo .submenu .line ,
+.box_popup.provider .personInfo .submenu .line
+{
+	border-bottom:1px solid #d6d6d6;
+}
+
+#box2.box_popup .personInfo .submenu a ,
+.box_popup.provider .personInfo .submenu a
+{
+	display:block;
+	width:140px;
+	height:30px;
+	line-height:30px;
+	font-size:16px;
+	color:#666;
+	text-align:center;
+	text-decoration:none;
+}
+
+#box2.box_popup .personInfo .detail1 ,
+#box2.box_popup .personInfo .detail2 ,
+.box_popup.provider .personInfo .detail1 ,
+.box_popup.provider .personInfo .detail2
+{
+	height:300px;
+	overflow:auto;
+}
+
+#box2.box_popup .personInfo .detail1::-webkit-scrollbar ,
+#box2.box_popup .personInfo .detail2::-webkit-scrollbar ,
+.box_popup.provider .personInfo .detail1::-webkit-scrollbar ,
+.box_popup.provider .personInfo .detail2::-webkit-scrollbar
+{
+	-webkit-appearance: none;
+	width: 5px;
+}
+
+#box2.box_popup .personInfo .detail1::-webkit-scrollbar-thumb ,
+#box2.box_popup .personInfo .detail2::-webkit-scrollbar-thumb ,
+.box_popup.provider .personInfo .detail1::-webkit-scrollbar-thumb ,
+.box_popup.provider .personInfo .detail2::-webkit-scrollbar-thumb
+{
+	border-radius: 4px;
+	background-color: rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+#box2.box_popup .personInfo .detail1::-webkit-scrollbar-track ,
+#box2.box_popup .personInfo .detail2::-webkit-scrollbar-track ,
+.box_popup.provider .personInfo .detail1::-webkit-scrollbar-track ,
+.box_popup.provider .personInfo .detail2::-webkit-scrollbar-track
+{
+	background-color: #CCC;
+}
+
+#box2.box_popup .personInfo .detail1 h3 ,
+#box2.box_popup .personInfo .detail2 h3 ,
+.box_popup.provider .personInfo .detail1 h3 ,
+.box_popup.provider .personInfo .detail2 h3
+{
+	color:#F60;
+	font-size:16px;
+	margin:20px 0 10px 0;
+}
+
+#box2.box_popup .personInfo .detail1 li ,
+#box2.box_popup .personInfo .detail2 li ,
+.box_popup.provider .personInfo .detail1 li ,
+.box_popup.provider .personInfo .detail2 li
+{
+	color:#666;
+	font-size:15px;
+	line-height:25px;
+}
+
+#box2.box_popup .personInfo .detail2 ul ,
+.box_popup.provider .personInfo .detail2 ul
+{
+	margin:20px;
+}
+
+#box2.box_popup .personInfo .detail2 .left ,
+.box_popup.provider .personInfo .detail2 .left
+{
+	width:48%;
+	float:left;
+}
+
+#box2.box_popup .personInfo .detail2 .right ,
+.box_popup.provider .personInfo .detail2 .right
+{
+	margin-left:50%;
+	width:48%;
+}
+
+#box2.box_popup .choiceArea ,
+.box_popup.provider .choiceArea
+{
+	margin:10px 0 0 15px;
+	font-size:13px !important;
+}
+
+#box2.box_popup .choiceArea select ,
+.box_popup.provider .choiceArea select
+{
+	font-size:13px !important;
+}
+
+/*  個人資料 lightbox */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+#personInfo.box_popup .frame
+{
+	width:700px;
+	min-height:400px;
+}
+
+#personInfo.box_popup .frame .info
+{
+    float: left;
+    width: 180px;
+}
+
+#personInfo.box_popup .frame .info .photo
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#personInfo.box_popup .frame .info .photo img
+{
+    width: 100%;
+    height: auto;
+}
+
+#personInfo.box_popup .frame .info p
+{
+    font-size: 16px;
+    color: #F60;
+    line-height: 30px;
+}
+
+#personInfo.box_popup .frame table.content
+{
+    margin-left: 180px;
+    width:500px;
+}
+
+#personInfo.box_popup .frame table.content tr
+{
+    border-bottom: 1px solid #EEE;
+}
+
+#personInfo.box_popup .frame table.content th
+{
+	font-size:16px;
+	width:150px;
+}
+

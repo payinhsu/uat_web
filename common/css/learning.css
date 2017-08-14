@@ -1,0 +1,708 @@
+
+@charset "utf-8";
+
+/* template */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+#learning
+{
+	padding-bottom:50px;
+}
+
+.forPC {display:block;}
+.forMobile {display:none;}
+
+#learning .wrap
+{
+	width:992px;
+}
+
+/* topBar --------------------- */
+
+#learning .topBar
+{
+	width:100%;
+	height:60px;
+	background:#35aabc;
+	position:relative;
+	z-index:998;
+}
+
+#learning .topBar img.logo
+{
+	width:150px;
+	margin:20px 0 0 20px;
+}
+
+/* content --------------------- */
+
+#learning h2.title
+{
+	margin:25px 0;
+	background:#35aabc;
+	padding:10px;
+	border-radius:5px;
+	color:#FFF;
+	font-size:25px;
+}
+
+#learning h3.title
+{
+	margin:10px 0;
+	background:#F90;
+	padding:7px;
+	border-radius:5px;
+	color:#FFF;
+	font-size:16px;
+}
+
+#learning p.text-center > .btn
+{
+	margin:50px 0;
+}
+
+/* footer --------------------- */
+
+#learning .footer
+{
+	background:#363636;
+	border-top:4px solid #35aabc;
+}
+
+#learning .gototop a
+{
+	background-color:#35aabc;
+}
+
+#learning .footer .copyright
+{
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	font-size:13px;
+	color:#AAA;
+	border-top:1px solid #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for bootstrap */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+#learning .col-lg-1, 
+#learning .col-lg-10, 
+#learning .col-lg-11, 
+#learning .col-lg-12, 
+#learning .col-lg-2, 
+#learning .col-lg-3, 
+#learning .col-lg-4, 
+#learning .col-lg-5, 
+#learning .col-lg-6, 
+#learning .col-lg-7, 
+#learning .col-lg-8, 
+#learning .col-lg-9, 
+#learning .col-md-1, 
+#learning .col-md-10, 
+#learning .col-md-11, 
+#learning .col-md-12, 
+#learning .col-md-2, 
+#learning .col-md-3, 
+#learning .col-md-4, 
+#learning .col-md-5, 
+#learning .col-md-6, 
+#learning .col-md-7, 
+#learning .col-md-8, 
+#learning .col-md-9, 
+#learning .col-sm-1, 
+#learning .col-sm-10, 
+#learning .col-sm-11, 
+#learning .col-sm-12, 
+#learning .col-sm-2, 
+#learning .col-sm-3, 
+#learning .col-sm-4, 
+#learning .col-sm-5, 
+#learning .col-sm-6, 
+#learning .col-sm-7, 
+#learning .col-sm-8, 
+#learning .col-sm-9, 
+#learning .col-xs-1, 
+#learning .col-xs-10, 
+#learning .col-xs-11, 
+#learning .col-xs-12, 
+#learning .col-xs-2, 
+#learning .col-xs-3, 
+#learning .col-xs-4, 
+#learning .col-xs-5, 
+#learning .col-xs-6, 
+#learning .col-xs-7, 
+#learning .col-xs-8, 
+#learning .col-xs-9
+{
+	padding-bottom: 2px;
+	padding-top:2px;
+}
+
+#learning .form-group label b
+{
+	color:#C00;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* topBar */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+#learning .topBar .personalInfo
+{
+	position:absolute;
+	right:10px;
+	top:10px;
+}
+
+#learning .topBar .personalInfo .photo
+{
+	float:left;
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	overflow:hidden;
+}
+
+#learning .topBar .personalInfo .photo img
+{
+	width:100%;
+	height:100%;
+}
+
+#learning .topBar .personalInfo .name
+{
+	float:left;
+	font-size:16px;
+	color:#FFF;
+	line-height:40px;
+	padding:0 10px;
+}
+
+#learning .topBar .personalInfo .name a
+{
+	color:#FFF;
+	text-decoration:none;
+}
+
+#learning .topBar .personalInfo .notice
+{
+	float:left;
+	color:#FFF;
+	line-height:40px;
+	text-decoration:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* topMenu */
+/* ---------------------------------------------------------------------------------------- */
+/* -------------------------------topMenu--------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+#learning .topMenu
+{
+	height:90px;
+	padding:10px 0;
+	position:relative;
+}
+
+#learning .topMenu .logo
+{
+	float:left;
+	width:100px;
+	height:70px;
+	background-size:contain;
+	background-position:center center;
+	background-repeat:no-repeat;
+}
+
+#learning .topMenu .name
+{
+	display:table-cell;
+	width:190px;
+	height:70px;	
+	vertical-align:middle;
+	line-height:25px;
+	font-size:20px;
+	color:#333;
+	padding-left:5px;
+}
+
+#learning .topMenu .btns
+{
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+#learning .topMenu .btns a
+{
+	display:inline-block;
+	width:70px;
+	height:70px;
+	text-align:center;
+	border:1px solid #ccc;
+	border-radius:5px;
+	text-decoration:none;
+	font-size:13px;
+	color:#35aabc;
+	margin:0;	
+}
+
+#learning .topMenu .btns a:hover
+{
+	border:1px solid #999;
+	color:#369;
+}
+
+#learning .topMenu .btns a span
+{
+	display:block;
+	font-size:25px;
+	margin:10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* topSearch */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+
+#learning .topSearch
+{
+	position:relative;
+	z-index:999;
+}
+
+#learning .topSearch .inner
+{
+	position:absolute;
+	top:-43px;
+	left:200px;
+}
+
+#learning .topSearch select
+{
+	width:110px;
+	height:30px;
+	background:#FFF;
+	border:1px solid #35aabc;
+	float:left;
+}
+
+#learning .topSearch input
+{
+	width:270px;
+	height:30px;
+	background:#FFF;
+	border:1px solid #35aabc;
+	border-radius:5px;
+	float:left;
+}
+
+#learning .topSearch button
+{
+	margin:0;
+	padding:0;
+	width: 35px;
+	height:28px;
+	border:0;
+	float:left;
+	margin-top:1px;
+	color:#35aabc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* agencyBox */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+#learning .agencyBoxs
+{
+	padding:20px 0;
+	vertical-align:top;
+	text-align:center;
+}
+
+#learning .agencyBoxs .box
+{
+	width:300px;
+	border:1px solid #CCC;
+	border-radius:3px;
+	margin:5px;
+	padding:10px;
+	display:inline-block;
+	vertical-align:top;
+	text-align:left;
+}
+
+#learning .agencyBoxs .box .title
+{
+	font-size:18px;
+	color:#333;
+	line-height:30px;
+	margin:0;
+}
+
+#learning .agencyBoxs .box .title span
+{
+	display:inline-block;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	background:#666;
+	color:#FFF;
+	font-size:12px;
+	line-height:30px;
+	text-align:center;
+	vertical-align:middle;
+	margin-right:5px;
+}
+
+#learning .agencyBoxs .box .title span.L1 {background:#33abbc;}
+#learning .agencyBoxs .box .title span.L2 {background:#ff9900;}
+#learning .agencyBoxs .box .title span.L3 {background:#cc3333;}
+
+#learning .agencyBoxs .box .photo img
+{
+	width:100%;
+}
+
+#learning .agencyBoxs .box ul li b
+{
+	font-weight:bold;
+	color:#999;
+}
+
+#learning .agencyBoxs .box .btns
+{
+	text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 991px)
+{
+	.forPC {display:block;}
+	.forMobile {display:none;}
+	#learning 
+	{
+		padding:40px 0 50px 0;
+	}
+	#learning .wrap
+	{
+		width:100%;
+	}
+	#learning .topBar
+	{
+		position:fixed;
+		top:0;
+	}
+	#learning .topMenu
+	{
+		text-align:center;
+		height:180px;
+		padding:30px 0 20px 0;
+	}
+	#learning .topMenu .logo
+	{
+		float:none;
+		display:inline-block;
+		vertical-align:middle;
+	}
+	#learning .topMenu .logo img
+	{
+		margin:0;
+	}
+	#learning .topMenu .name
+	{
+		float:none;
+		display:inline;
+		width:185px;
+		vertical-align:middle;
+	}
+	#learning .topMenu .btns
+	{
+		position:static;
+	}
+	#learning .topSearch
+	{
+		position:fixed;
+		margin-top:17px;
+	}
+	#learning .agencyBoxs .box
+	{
+		width:45%;
+		text-align:left;
+	}
+}
+
+@media (max-width: 766px)
+{
+	.forPC {display:none;}
+	.forMobile {display:block;}
+	#learning .topBar
+	{
+		position:fixed;
+		top:0;
+		height:44px;
+		text-align:center;
+		z-index:1001;
+	}
+	#learning .topBar img.logo
+	{
+		width:120px;
+		margin:13px 0 0 0;
+	}
+	#learning .topBar .personalInfo
+	{
+		top:2px;
+	}
+	#learning .topBar .personalInfo .photo ,
+	#learning .topBar .personalInfo a.notice
+	{
+		float:right;
+	}
+	#learning .topBar .personalInfo a.notice
+	{
+		padding:0 10px;
+	}
+	#learning .topBar .personalInfo>.name
+	{
+		display:none;
+	}
+	#learning .topMenu
+	{
+		z-index:1000;
+		height:auto;
+		padding:0;
+		width:90%;
+		margin:0 auto;
+	}
+	#learning .topMenu
+	{
+		height:70px;
+	}
+	#learning .topMenu .logo
+	{
+		float:left;
+	}
+	#learning .topMenu .name
+	{
+		display:table-cell;
+		text-align:left;
+	}
+	#learning .topMenu .btns
+	{
+		display:none;
+		position:fixed;
+		top:44px;
+		left:0;
+		background:#FFF;
+		padding:5px;
+	}
+	#learning .topMenu .btns a
+	{
+		width:65px;
+		height:65px;
+		margin-bottom:2px;
+	}
+	#learning .topSearch
+	{
+		text-align:center;
+		position:static;
+	}
+	#learning .topSearch .inner
+	{
+		position:static;
+		height:50px;
+		line-height:50px;
+		clear:both;
+	}
+	#learning .topSearch select ,
+	#learning .topSearch input ,
+	#learning .topSearch button
+	{
+		float:none;
+		vertical-align:middle;
+	}
+	#learning .topSearch button
+	{
+		background-color:#35aabc;
+		color:#FFF;
+	}
+	#learning .topSearch input
+	{
+		width:auto;
+	}
+	#learning .topSearch button
+	{
+		background:#35aabc;
+		color:#FFF;
+		height:30px;
+	}
+	#learning .topBar .mobileMenu
+	{
+		position:absolute;
+		left:10px;
+		top:10px;
+		font-size:18px;
+		color:#FFF;
+	}
+	#learning .footer .copyright
+	{
+		font-size:12px;
+	}
+	#learning .agencyBoxs
+	{
+		text-align:center;
+	}
+	#learning .agencyBoxs .box
+	{
+		width:90%;
+	}
+}
+
+
+

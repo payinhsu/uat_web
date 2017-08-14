@@ -1,0 +1,1065 @@
+
+@charset "utf-8";
+
+/* for bootstrap */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+
+#portal .txt-default {color:#333;}
+#portal .txt-success {color:#090;}
+#portal .txt-danger {color:#C00;}
+
+#portal .btn-default
+{
+    display: inline-block;
+    padding: 2px 12px;
+	margin:10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;s
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
+	text-decoration:none;
+}
+
+#portal .btn-default:hover
+{
+	color: #333;
+	text-decoration:none;
+}
+
+#portal .btn-warning
+{
+	color: #fff !important;
+	background-color: #f0ad4e !important;
+	border-color: #eea236 !important;
+}
+
+#portal .btn-danger
+{
+	color: #fff !important;
+	background-color: #d9534f !important;
+	border-color: #d43f3a !important;
+}
+
+#portal .btn-dark
+{
+	color: #fff !important;
+	background-color: #333 !important;
+	border-color: #666 !important;
+}
+
+#portal .btn-success
+{
+	color: #fff !important;
+	background-color: #5cb85c !important;
+	border-color: #4cae4c !important;
+}
+
+#portal .btn-primary
+{
+	color: #fff !important;
+	background-color: #dd6a1d !important;
+	border-color: #ab4d0f !important;
+}
+
+#portal .btn-disable
+{
+	color: #666 !important;
+	background-color: #CCC !important;
+	border-color: #666 !important;
+}
+
+#portal .btn-success
+{
+	color: #fff !important;
+	background-color: #5cb85c !important;
+	border-color: #4cae4c !important;
+}
+
+#portal .btn-info
+{
+	color: #fff !important;
+	background-color: #5bc0de !important;
+	border-color: #46b8da !important;
+}
+
+#portal .btn-cancel
+{
+	display:block;
+	width:120px;
+	height:30px;
+	border-radius:3px;
+	line-height:30px;
+	margin:10px;
+	background:#333;
+	color:#FFF;
+	font-size:18px;
+	text-align:center;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+#portal .btn-edit
+{
+	display:inline-block;
+	min-width:75px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	color:#FFF;
+	background:#b5977e;
+	font-size:16px;
+	border-radius:3px;
+	text-decoration:none;
+}
+
+#portal .btn-send-case
+{
+	display:inline-block;
+	width:65px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	color:#FFF;
+	background:#dd6a1d;
+	font-size:16px;
+	border-radius:3px;
+	text-decoration:none;
+}
+
+
+#portal .btn-warning:hover ,
+#portal .btn-warning:hover ,
+#portal .btn-danger:hover ,
+#portal .btn-dark:hover ,
+#portal .btn-success:hover ,
+#portal .btn-primary:hover ,
+#portal .btn-success:hover ,
+#portal .btn-info:hover ,
+#portal .btn-cancel:hover ,
+#portal .btn-edit:hover ,
+#portal .btn-send-case:hover
+{
+	color:#FFF !important;
+	text-decoration:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* search */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+#portal .searchBox select ,
+#portal .searchBox input
+{
+	border:1px solid #CCC;
+	background:#FFF;
+	border-radius:5px;
+	height:30px;
+	line-height:30px;
+	font-size:14px;
+	color:#333;
+	outline:none;
+}
+
+#portal .searchBox p {margin-bottom:20px;}
+
+#portal .searchBox input
+{
+	height:26px;
+	line-height:30px;
+}
+
+#portal .searchBox input.submit
+{
+	width:70px;
+	height:30px;
+	line-height:26px;
+	font-size:15px;
+	color:#FFF;
+	background:#ea5529;
+	vertical-align:middle;
+	border:0;
+	cursor:pointer;
+}
+
+#portal .searchLine
+{
+	font:0;
+	line-height:1px;
+	height:1px;
+	border-bottom:1px solid #CCC;
+}
+
+#portal .searchBtn
+{
+	font-size:12px;
+	color:#FFF;
+	width:100px;
+	height:25px;
+	line-height:25px;
+	text-align:center;
+	margin:0 auto;
+	background:#666;
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+	cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* template */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+#portal .header .logo
+{
+	height:65px;
+	line-height:65px;
+}
+
+#portal .header .logo img
+{
+	height:25px;
+	vertical-align:middle;
+}
+
+#portal .header .menu
+{
+	height:50px;
+	line-height:50px;
+	vertical-align:middle;
+	background:#ea5529;
+}
+
+#portal .header .menu a
+{
+	display:block;
+	float:left;
+	height:50px;
+	line-height:50px;
+	font-size:15px;
+	color:#EEE;
+	letter-spacing:2px;
+	text-decoration:none;
+}
+
+#portal .header .menu a span
+{
+
+	border-right:1px dotted #FFF;
+	padding:0 10px;
+}
+
+#portal .header .menu a:hover
+{
+	text-decoration:underline;
+}
+
+#portal .header .menu a.on
+{
+	color:#FF6;
+	background:url(../img/menu_arrow.png) center bottom no-repeat;
+}
+
+#portal .header .menu a:nth-child(1) span
+{
+	border-left:1px dotted #FFF;
+}
+
+#portal .header .submenu
+{
+	position:relative;
+	height:60px;
+	line-height:60px;
+	vertical-align:middle;
+	background:#FFF;
+	border-bottom:1px solid #eee;
+	width:100%;
+	max-width:1200px;
+	margin:0 auto;
+}
+
+#portal .header .submenu a
+{
+	font-size:15px;
+	color:#333;
+	letter-spacing:0;
+	text-decoration:none;
+	padding:0 10px;
+	background:url(../img/submenu_arrow.png) 0 7px no-repeat;
+}
+
+#portal .header .submenu a:hover
+{
+	text-decoration:underline;
+}
+
+#portal .header .submenu a.on
+{
+	color:#C00;
+}
+
+#portal .header .submenu .sm_order
+{
+	position:absolute;
+	left:400px;
+}
+
+#portal .location
+{
+	line-height:40px;
+	font-size:12px;
+	color:#999;
+	text-align:right;
+}
+
+#portal .location .msg
+{
+	float:left;
+}
+
+#portal .content
+{
+	padding-bottom:70px;
+}
+
+#portal .content .title
+{
+	background:url(../img/title_bg.gif) repeat-x center center;
+	margin-bottom:20px;
+}
+
+#portal .content .title h1
+{
+	display:inline-block;
+	font-size:20px;
+	font-weight:bold;
+	color:#000;
+	height:50px;
+	line-height:50px;
+	background:#FFF;
+	padding-right:5px;
+	margin:0;
+}
+
+#portal .footer
+{
+	background:#363636;
+	border-top:4px solid #ea5529;
+}
+
+#portal .footer .copyright
+{
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	font-size:13px;
+	color:#AAA;
+	border-top:1px solid #FFF;
+}
+
+#portal .gototop a
+{
+	background-color:#e97f27;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* list table */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+#portal .listTotal
+{
+	font-size:15px;
+	color:#666;
+	line-height:50px;
+}
+
+#portal .listTB table
+{
+	width:100%;
+	border:2px solid #CCC;
+	border-top:2px solid #333;
+}
+
+#portal .listTB table tr.hover
+{
+	background:#FFE;
+}
+
+#portal .listTB table th ,
+#portal .listTB table td
+{
+	font-size:13px;
+	color:#333;
+	text-align:center;
+	height:40px;
+	line-height:40px;
+	padding:2px;
+}
+
+#portal .listTB table th
+{
+	background:#f3f3f3;
+	font-size:13px;
+}
+
+#portal .listTB table td
+{
+	line-height:20px;
+	font-size:13px;
+	vertical-align:middle;
+}
+
+#portal .listTB table th a
+{
+	display:inline-block;
+	width:16px;
+	height:16px;
+	vertical-align:middle;
+	background:url(../../common/img/ui-icons_222222_256x240.png) -64px -16px no-repeat;
+}
+
+#portal .listTB table td a
+{
+	color:#36C;
+	text-decoration:underline;
+}
+
+/** louis - 2016.08.03 (remove dashline tr) 
+#portal .listTB table td.dashline
+{
+	border-bottom:1px solid #CCC;
+	font:0;
+	line-height:0;
+	height:0;
+}
+**/
+
+#portal .listTB table td.cost
+{
+	text-align:right;
+	padding-right:5px;
+}
+
+/** louis - 2016.08.03 (dashline) **/
+#portal .listTB table tbody td {
+    border-bottom: 1px solid #CCC;
+}
+
+#portal .listTB table td .t1 {color:#C22;}
+#portal .listTB table td .t2 {color:#F90;}
+#portal .listTB table td .t3 {color:#390;}
+#portal .listTB table td .t4 {color:#36C;}
+
+#portal .listPages
+{
+	width:350px;
+	margin:0 auto;
+	font-size:13px;
+	color:#333;
+	letter-spacing:2px;
+	text-align:center;
+	padding:20px 0;
+}
+
+#portal .listPages a
+{
+	color:#333;
+	text-decoration:none;
+	padding:0 3px;
+	border-radius:3px;
+	border:1px solid #EEE;
+}
+
+#portal .listPages a:hover
+{
+	background:#CCC;
+}
+
+#portal .listPages a.on
+{
+	padding:3px;
+	font-size:20px;
+	color:#FFF;
+	background:#666;
+	border-radius:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* list detail */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+#portal .listBack {line-height:40px;}
+#portal .listBack a {text-decoration:underline;}
+
+#portal .listTitle
+{
+	background:#EEE;
+	border-radius:5px;
+	padding:10px;
+	line-height:50px;
+	font-size:18px;
+	color:#000;
+	min-height:70px;
+}
+
+#portal .listDate
+{
+	font-size:12px;
+	color:#333;
+	line-height:40px;
+}
+
+#portal .listBox 
+{
+	position:relative;
+	padding-bottom:50px;
+}
+
+#portal .listBox.topNote .box li ,
+#portal .listBox.topNote .box p
+{
+	line-height:40px;
+	border-bottom:1px dashed #ccc;
+	font-size:16px;
+	color:#333;
+	padding:0 10px;
+}
+
+#portal .listBox.topNote .box p:nth-last-child(1)
+{
+	border:0;
+}
+
+#portal .listBox .serviceTTL
+{
+	font-size:24px;
+	color:#dd6a1d;
+	line-height:50px;
+}
+
+#portal .listBox .serviceTTL span
+{
+	/*font-size:18px;*/
+}
+
+#portal .listBox .buttonEdit
+{
+	text-align:right;
+	padding-bottom:10px;
+}
+
+#portal .listBox .box
+{
+	border:5px solid #d5d5d5;
+}
+
+#portal .listBox .box table
+{
+	width:95%;
+	margin:0 auto;
+}
+
+#portal .listBox .box table tr
+{
+	border-bottom:1px solid #EEE;
+}
+
+#portal .listBox .box table th ,
+#portal .listBox .box table td
+{
+	text-align:left;
+	line-height:40px;
+}
+
+#portal .listBox .box table th
+{
+	font-size:18px;
+	color:#000;
+}
+
+#portal .listBox .box table th.subTTL
+{
+	font-size:18px;
+	color:#dd6a1d;
+	text-align:center;
+}
+
+#portal .listBox .box table td
+{
+	font-size:16px;
+	color:#666;
+}
+
+#portal .listBox .box table td.time , 
+#portal .listBox .box table td.cost
+{
+	text-align:right;
+}
+
+#portal .listBox .costTotal
+{
+	font-size:26px;
+	color:#333;
+	line-height:40px;
+	text-align:right;
+	padding-right:20px;
+}
+
+#portal .listBox .box table td input[type=text] ,
+#portal .listBox .box table td input[type=number] ,
+#portal .listBox .box table td select ,
+#portal .listBox .box textarea
+{
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+    background: #FFF;
+    border: 1px solid #999;
+    border-radius: 5px;
+    resize:none;
+}
+
+#portal .listBox .box table td select
+{
+	max-width:280px;
+}
+
+#portal .allCostTotal
+{
+	font-size:30px;
+	color:#C33;
+	line-height:40px;
+	text-align:right;
+	margin-top:-45px;
+	padding-right:20px;
+	padding-bottom:30px;
+}
+
+#portal .listBox .box.note
+{
+	padding:20px;
+	font-size:16px;
+	color:#666;
+}
+
+#portal .buttonBack
+{
+	position:relative;
+	height:100px;
+}
+
+#portal .buttonBack a
+{
+	position:absolute;
+	display:block;
+	right:20px;
+	font-size:16px;
+	color:#FFF;
+	width:125px;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	background:#e98027;
+	border-radius:5px;
+}
+
+#portal .listBox .box label
+{
+	padding:0 10px 0 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* manager table */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+#portal .listTB .status {text-align:left;}
+
+#portal .listTB .status a
+{
+	color:#FFF;
+	text-decoration:none;
+}
+
+#portal .listBox.manager
+{
+	position:relative;
+}
+
+#portal .listBox.manager .box
+{
+	padding-bottom:20px;
+	background:
+		url(../img/icon_circle_arrow_right.png) center 15px no-repeat , 
+		url(../img/gray.gif) center top repeat-y;
+}
+
+#portal .listBox.manager .box .left
+{
+	width:45%;
+	margin:10px;
+	float:left;
+}
+
+#portal .listBox.manager .box .right
+{
+	width:45%;
+	margin:10px 10px 10px 53%;
+}
+
+#portal .listBox.manager .box .change {color:#C00;}
+
+#portal .listBox.manager .box .right .icon1 ,
+#portal .listBox.manager .box .right .icon2
+{
+	font-size:13px;
+	color:#FFF;
+	border-radius:3px;
+	padding:2px 4px;
+	vertical-align:top;
+}
+
+#portal .listBox.manager .box .left .icon1
+{
+	font-size:13px;
+	color:#FFF;
+	border-radius:3px;
+	padding:2px 4px;
+	vertical-align:top;
+}
+
+#portal .listBox.manager .box .right .icon1 {background:#e27e3c;}
+#portal .listBox.manager .box .left .icon1 {background:#e27e3c;}
+#portal .listBox.manager .box .right .icon2 {background:#38afff;}
+
+#portal .listBox .costTotal .left
+{
+	color:#999;
+	float:left;
+	width:48%;
+	text-align:right;
+}
+
+#portal .listBox .costTotal .right
+{
+	width:48%;
+	margin-left:53%;
+	text-align:right;
+}
+
+#portal .listBox.manager .buttonEdit
+{
+	position:absolute;
+	right:20px;
+}
+
+#portal .listBox.manager .buttonEdit.btn1
+{
+	top:70px;
+}
+
+#portal .listBox.manager .buttonEdit.btn2
+{
+	top:115px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hostory list */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+#portal .listBox .historyList
+{
+	padding:20px;
+	font-size:15px;
+	color:#666;
+	line-height:35px;
+}
+
+#portal .listBox .historyList h3
+{
+	border-top:1px dashed #CCC;
+	border-bottom:1px dashed #CCC;
+	font-size:16px;
+	color:#C00;
+	background:#F0F0F0;
+	padding-left:5px;
+}
+
+#portal .listBox .historyList .old
+{
+	float:left;
+	width:48%;
+}
+
+#portal .listBox .historyList .new
+{
+	margin-left:50%;
+	width:48%;
+	color:#F60;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for jsx */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+
+
+#portal .listBox.manager .box tag>div
+{
+	height:0 !important;
+	line-height:0 !important;
+	float:right;
+
+}
+
+#portal .listBox.manager .box button
+{
+    position: absolute !important;
+    right: 20px !important;
+    top: 65px !important;
+    display: inline-block !important;
+    width:auto !important;
+    min-width: 75px !important;
+    height: 36px !important;
+    line-height: 36px !important;
+    text-align: center !important;
+    color: #FFF !important;
+    background: #b5977e !important;
+    font-size: 16px !important;
+    border-radius: 3px !important;
+    text-decoration: none !important;
+}
+
+#portal hr
+{
+	display:none !important;
+}
+
+#portal .listBox.manager .box td.change div
+{
+	width:auto !important;
+	height:auto !important;
+	display:inline-block !important;
+}
+
+#portal .listBox.manager .box td.change div input
+{
+	border:1px solid #999 !important;
+	width:auto !important;
+	height:auto !important;
+	line-height:30px !important;
+	margin-right:5px !important;
+}
+
+#portal .listBox.manager .box input
+{
+	line-height:30px !important;
+	border-radius: 5px !important;
+	border: 1px solid #999 !important;
+}
+
+#portal .listBox.manager .box td.cost input
+{
+	text-align:right !important;
+}
+
+#portal .listBox.manager .left .costTotal
+{
+	font-size: 26px;
+	color:#999;
+	text-align:right;
+}
+
+#portal .listBox.manager .right .costTotal
+{
+	font-size: 26px;
+	text-align:right;
+}
+
+
+
+
+
+
+
+
+
+
+

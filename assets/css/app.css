@@ -1,0 +1,86 @@
+.hidden {
+    display: none;
+}
+
+.order-detail {
+	float: left;
+	margin: 50px;
+}
+
+.order-list td {
+	border:1px;
+	border-style: solid;
+}
+
+.order-detail td {
+	border:1px;
+	border-style: solid;
+}
+
+#sidebar-view {
+	float: left;
+	left: 200px;
+}
+
+#sidebar-view > div{
+}
+
+#sidebar-view {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    float: left;
+}
+
+#sidebar-view li a {
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+#sidebar-view li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.component-title h4{
+    float: left;
+}
+.component-title-btns {
+    float: right;
+}
+
+.component-form {
+    clear: both;
+}
+
+#admin-view{
+    width: auto;
+    overflow: hidden;
+}
+
+.schedule-table{
+    border-collapse: collapse;
+}
+
+.schedule-table, .schedule-table th, .schedule-table td{
+    border: 1px solid black;
+}
+
+.component-form > fieldset {
+    margin-bottom: 10px;
+}
+
+
+.master-course-activitys-view .top-btns-bar{
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+.master-course-activitys-view button{
+    float: left;
+    margin-right: 5px;
+}

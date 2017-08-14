@@ -1,0 +1,16 @@
+!node_modules
+node_modules/*
+!node_modules/passport-saml
+node_modules/passport-saml/node_modules
+npm-debug.log
+dist
+build
+/naught.log
+/naught.pid
+/stderr.log
+/stdout.log
+coverage
+/nohup.out
+
+
+!node_modules/passport-saml/lib/passport-saml/saml.js

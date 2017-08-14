@@ -1,0 +1,114 @@
+
+@charset "utf-8";
+
+#index .main .logo
+{
+	clear:both;
+	text-align:center;
+	padding:50px;
+}
+
+#index .main .logo img {width:200px;}
+
+#index .main .indexBox
+{
+	text-align:center;
+	vertical-align:top;
+}
+
+#index .main .mainBox
+{
+	margin:30px;
+	display:inline-block;
+	position:relative;
+	vertical-align:top;
+}
+
+#index .main .mainBox.box1 a.box
+{
+	background:#FFF url(../img/logo1.png) no-repeat center center;
+	border:2px solid #e97f27;
+}
+
+#index .main .mainBox.box1 a.box:hover
+{
+	background:#e97f27 url(../img/logo1on.png) no-repeat center center;
+	color:#FFF;
+}
+
+#index .main .mainBox.box2 a.box
+{
+	background:#FFF url(../img/logo2.png) no-repeat center center;
+	border:2px solid #35aabc;
+}
+
+#index .main .mainBox.box2 a.box:hover
+{
+	background:#35aabc url(../img/logo2on.png) no-repeat center center;
+	color:#FFF;
+}
+
+#index .main .mainBox.box3 a.box
+{
+	background:#FFF url(../img/logo3.png) no-repeat center center;
+	border:2px solid #999;
+}
+
+#index .main .mainBox.box3 a.box:hover
+{
+	background:#999 url(../img/logo3on.png) no-repeat center center;
+	color:#FFF;
+}
+
+#index .main .mainBox.box4 a.box
+{
+	background:#FFF url(../img/logo4.png) no-repeat center center;
+	border:2px solid #CCC;
+}
+
+#index .main .mainBox.box4 a.box:hover
+{
+	background:#CCC url(../img/logo4on.png) no-repeat center center;
+	color:#FFF;
+}
+
+#index .main .mainBox.box1 a.box ,
+#index .main .mainBox.box2 a.box ,
+#index .main .mainBox.box3 a.box ,
+#index .main .mainBox.box4 a.box ,
+#index .main .mainBox.box1 a.box:hover ,
+#index .main .mainBox.box2 a.box:hover ,
+#index .main .mainBox.box3 a.box:hover ,
+#index .main .mainBox.box4 a.box:hover
+{
+	display:block;
+	width:130px;
+	height:130px;
+	background-size:90% auto;
+	border-radius:10px;
+}
+
+#index .main .mainBox.box2 .note
+{
+	position:absolute;
+	width:40px;
+	height:40px;
+	left:5px;
+	top:5px;
+	background:#35aabc;
+	border-radius:50%;
+	color:#FFF;
+	line-height:15px;
+	padding-top:5px;
+}
+
+#index .main .mainBox.box2 a:hover .note
+{
+	background:#FFF;
+	color:#35aabc;
+}
+
+
+
+
+
